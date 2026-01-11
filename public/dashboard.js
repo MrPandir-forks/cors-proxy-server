@@ -1,6 +1,6 @@
 // dashboard.js - JavaScript for CORS Proxy Monitoring Dashboard
 
-export function getBaseUrl() {
+function getBaseUrl() {
   if (process.env.VERCEL_ENV === "production") {
     return `https://${process.env.VERCEL_URL}`;
   }
