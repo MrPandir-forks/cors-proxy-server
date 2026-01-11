@@ -1,16 +1,8 @@
 // dashboard.js - JavaScript for CORS Proxy Monitoring Dashboard
 
-function getBaseUrl() {
-  if (process.env.VERCEL_ENV === "production") {
-    return `https://${process.env.VERCEL_URL}`;
-  }
-
-  return "https://cors-proxy-xi-ten.vercel.app";
-}
-
 // Configuration
 const CONFIG = {
-  apiBaseUrl: getBaseUrl() + "/api",
+  apiBaseUrl: window.location.origin + "/api",
   refreshInterval: 30000, // Auto-refresh every 30 seconds
   maxTableRows: 100, // Maximum rows to display in the table
   chartColors: {
