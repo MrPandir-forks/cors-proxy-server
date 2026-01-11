@@ -4,7 +4,7 @@ A simple, general-purpose CORS proxy using Vercel serverless functions. This pro
 
 ## Demo
 
-A live version of this proxy is available at: [https://cors-proxy-xi-ten.vercel.app/](https://cors-proxy-xi-ten.vercel.app/)
+A live version of this proxy is available at: [https://mr-cors-proxy.vercel.app/](https://mr-cors-proxy.vercel.app/)
 
 ## How It Works
 
@@ -22,7 +22,7 @@ This proxy acts as a middleware between your frontend application and the target
 To make a GET request through the proxy:
 
 ```javascript
-const PROXY_URL = 'https://cors-proxy-xi-ten.vercel.app/api/proxy';
+const PROXY_URL = 'https://mr-cors-proxy.vercel.app/api/proxy';
 const TARGET_API = 'https://api.example.com/data';
 
 fetch(`${PROXY_URL}?url=${encodeURIComponent(TARGET_API)}`)
@@ -40,7 +40,7 @@ fetch(`${PROXY_URL}?url=${encodeURIComponent(TARGET_API)}`)
 To make a POST request through the proxy:
 
 ```javascript
-const PROXY_URL = 'https://cors-proxy-xi-ten.vercel.app/api/proxy';
+const PROXY_URL = 'https://mr-cors-proxy.vercel.app/api/proxy';
 const TARGET_API = 'https://api.example.com/data';
 
 fetch(`${PROXY_URL}?url=${encodeURIComponent(TARGET_API)}`, {
